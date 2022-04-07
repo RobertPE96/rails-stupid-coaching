@@ -5,11 +5,11 @@ class QuestionsController < ApplicationController
   def answer
     @message = params[:message]
     if @message == "I am going to work right now!"
-      return response = ""
+      return @response = ""
     elsif @message.include?("?")
-      return response = "Silly question, get dressed and got to work"
+      return @response = "Silly question, get dressed and got to work"
     else
-      return response = "I don't core, get dressed and got to work!"
+      return @response = "I don't care, get dressed and got to work!"
     end
   end
 
