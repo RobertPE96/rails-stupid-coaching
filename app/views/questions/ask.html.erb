@@ -1,2 +1,5 @@
-<h1>This is my page</h1>
-<p>This is some content</p>
+
+<form action="/answer" method="get">
+  <input type="text" name="message" placeholder="Ask a question" value="<% params[:message] %>" >
+  <input type="submit" value="Ask!">
+</form>
